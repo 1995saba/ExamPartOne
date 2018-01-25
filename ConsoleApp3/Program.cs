@@ -144,8 +144,8 @@ namespace ExamPartOne
             //Console.WriteLine();
 
             //Task 7
-            //var orders = model.Order_Details.ToList();
-            //var products = model.Products.ToList();
+            //var orders = m.Order_Details.ToList();
+            //var products = m.Products.ToList();
             //int id = orders[0].OrderID;
             //Console.WriteLine(id);
             //foreach (var item in orders)
@@ -158,32 +158,32 @@ namespace ExamPartOne
 
             //    foreach (var inner in products)
             //    {
-            //        if(item.ProductID==inner.ProductID)
-            //        Console.WriteLine(" {0}", inner.ProductName);
+            //        if (item.ProductID == inner.ProductID)
+            //            Console.WriteLine(" {0}", inner.ProductName);
             //    }
             //}
             //Console.ReadLine();
 
             //Task 8
-            //var orders = model.Orders.OrderBy(p=>p.CustomerID).ToList();
-            //string cust = orders[0].CustomerID;
-            //Console.WriteLine("{0}:",cust);
+            //var ordersByCustomers = m.Orders.OrderBy(p => p.CustomerID).ToList();
+            //string customer = orders[0].CustomerID;
+            //Console.WriteLine("{0}:", customer);
 
-            //foreach(var item in orders)
+            //foreach (var item in ordersByCustomers)
             //{
-            //    if(item.CustomerID != cust)
+            //    if (item.CustomerID != customer)
             //    {
-            //        cust = item.CustomerID;
-            //        Console.WriteLine("{0}:", cust);
+            //        customer = item.CustomerID;
+            //        Console.WriteLine("{0}:", customer);
             //    }
             //    Console.WriteLine(" {0}", item.EmployeeID);
             //}
             //Console.ReadLine();
 
             //Task 9
-            //var product = model.Products.ToList();
-            //var orderdet = model.Order_Details.ToList();
-            //var orders = model.Orders.ToList();
+            //var product = m.Products.ToList();
+            //var orderdet = m.Order_Details.ToList();
+            //var orders = m.Orders.ToList();
 
             //foreach (var item in product)
             //{
@@ -192,11 +192,11 @@ namespace ExamPartOne
             //    {
             //        if(item.ProductID == inner.ProductID)
             //        {
-            //            foreach(var ininer in orders)
+            //            foreach(var order in orders)
             //            {
-            //                if(ininer.OrderID == inner.OrderID)
+            //                if(order.OrderID == inner.OrderID)
             //                {
-            //                    Console.WriteLine(" {0}",ininer.CustomerID);
+            //                    Console.WriteLine(" {0}",order.CustomerID);
             //                }
             //            }
             //        }
